@@ -204,10 +204,11 @@ describe('backbone.paginator.clientPager', function() {
 
     it("should set url as query option from the evaluated url function value from 'paginator_core'", function(){
       var clientPagerTest = {
+       url: function(){
+         return '/rest/search/presidents';
+        },
         paginator_core: {
-          url: function(){
-            return '/rest/search/presidents';
-          }
+
         }
       };
       _.extend(clientPagerTest, new Backbone.Paginator.clientPager());
@@ -326,6 +327,7 @@ describe('backbone.paginator.clientPager', function() {
     describe('"request" event ', function() {
       var OPTS = {
           model: Backbone.Model,
+           url: 'test',
           paginator_ui: {
             firstPage: 1,
             currentPage: 1,
@@ -334,7 +336,6 @@ describe('backbone.paginator.clientPager', function() {
             pagesInRange: 4
           },
           paginator_core: {
-            url: 'test',
             dataType: 'json'
           },
           parse: function (response) {
@@ -496,9 +497,9 @@ describe('backbone.paginator.clientPager', function() {
     beforeEach(function() {
       this.defaultsStub.restore();
       var OPTS = {
+        url: '/',
         paginator_core: {
           dataType: 'json',
-          url: '/'
         },
         paginator_ui: {
           currentPage: 1,
