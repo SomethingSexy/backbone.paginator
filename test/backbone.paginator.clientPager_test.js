@@ -162,7 +162,7 @@ describe('backbone.paginator.clientPager', function() {
           dataType: 'jsonType'
         }
       };
-      _.extend(clientPagerTest, new Backbone.Paginator.clientPager({url : 'test'}));
+      _.extend(clientPagerTest, new Backbone.Paginator.clientPager(), {url : 'test'});
 
       var options = {};
       clientPagerTest.sync(null, null, options);
