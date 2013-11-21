@@ -160,9 +160,10 @@ describe('backbone.paginator.clientPager', function() {
         paginator_core: {
           type: 'POST',
           dataType: 'jsonType'
-        }
+        },
+        {url : 'test'}
       };
-      _.extend(clientPagerTest, new Backbone.Paginator.clientPager(), {url : 'test'});
+      _.extend(clientPagerTest, new Backbone.Paginator.clientPager());
 
       var options = {};
       clientPagerTest.sync(null, null, options);
