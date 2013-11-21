@@ -40,6 +40,7 @@ describe("Backbone 0.9.2 specific functionality", function() {
 
     describe('"sync" and "error" events ', function() {
       var OPTS = {
+          url: 'test',      
           model: Backbone.Model,
           paginator_ui: {
             firstPage: 1,
@@ -49,7 +50,6 @@ describe("Backbone 0.9.2 specific functionality", function() {
             pagesInRange: 4
           },
           paginator_core: {
-            url: 'test',
             dataType: 'json'
           },
           parse: function (response) {
