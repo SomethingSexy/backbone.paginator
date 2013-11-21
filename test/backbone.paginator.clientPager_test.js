@@ -14,7 +14,7 @@ describe('backbone.paginator.clientPager', function() {
     this.removeSpy = sinon.stub(Backbone.Paginator.clientPager.prototype, 'removeModel');
     this.defaultsStub = sinon.stub(Backbone.Paginator.clientPager.prototype, 'setDefaults');
 
-    this.clientPagerTest = new Backbone.Paginator.clientPager();
+    this.clientPagerTest = new Backbone.Paginator.clientPager({url : 'test'});
   });
   afterEach(function() {
     this.addSpy.restore();
