@@ -76,9 +76,9 @@ describe("Backbone 1.0.0 specific functionality", function() {
           pagesInRange: 4
         },
         paginator_core: {
-          url: 'test',
           dataType: 'json'
         },
+        url: 'test',
         parse: function (response) {
           return response;
         }
