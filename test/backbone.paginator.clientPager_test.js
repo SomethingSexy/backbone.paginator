@@ -156,14 +156,14 @@ describe('backbone.paginator.clientPager', function() {
     });
 
     it("should use 'paginator_core' values as query options to ajax call", function(){
-      var clientPagerTest = {
+      var ClientPagerTest = Backbone.Paginator.clientPager({
         paginator_core: {
           type: 'POST',
           dataType: 'jsonType'
         },
         url : 'test'
-      };
-      _.extend(clientPagerTest, new Backbone.Paginator.clientPager());
+      });
+      var clientPagerTest = new ClientPagerTest();
 
       var options = {};
       clientPagerTest.sync(null, null, options);
