@@ -161,7 +161,7 @@ describe('backbone.paginator.clientPager', function() {
           type: 'POST',
           dataType: 'jsonType'
         },
-        {url : 'test'}
+        url : 'test'
       };
       _.extend(clientPagerTest, new Backbone.Paginator.clientPager());
 
