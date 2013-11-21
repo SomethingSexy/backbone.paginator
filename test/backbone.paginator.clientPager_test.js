@@ -204,8 +204,8 @@ describe('backbone.paginator.clientPager', function() {
 
     it("should set url as query option from the evaluated url function value from 'paginator_core'", function(){
       var clientPagerTest = {
-       url: function(){
-         return '/rest/search/presidents';
+        url: function(){
+          return '/rest/search/presidents';
         },
         paginator_core: {
 
@@ -327,7 +327,7 @@ describe('backbone.paginator.clientPager', function() {
     describe('"request" event ', function() {
       var OPTS = {
           model: Backbone.Model,
-           url: 'test',
+          url: 'test',
           paginator_ui: {
             firstPage: 1,
             currentPage: 1,
