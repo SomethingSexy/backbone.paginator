@@ -499,7 +499,7 @@ describe('backbone.paginator.clientPager', function() {
       var OPTS = {
         url: '/',
         paginator_core: {
-          dataType: 'json',
+          dataType: 'json'
         },
         paginator_ui: {
           currentPage: 1,
