@@ -160,12 +160,14 @@ describe('backbone.paginator.clientPager', function() {
         paginator_core: {
           type: 'POST',
           dataType: 'jsonType'
-        },
-        url : 'test'
+        }
       });
       var clientPagerTest = new ClientPagerTest();
 
-      var options = {};
+      var options = {
+        url : 'test'
+      };
+      // TODO: the problem is we are not passing in a model so it cannot pull the URL off there.  These tests might not be necessary anymore
       clientPagerTest.sync(null, null, options);
 
       expect(spy.callCount).to.equal(1);
