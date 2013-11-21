@@ -162,7 +162,7 @@ describe('backbone.paginator.clientPager', function() {
           dataType: 'jsonType'
         }
       };
-      _.extend(clientPagerTest, new Backbone.Paginator.clientPager());
+      _.extend(clientPagerTest, new Backbone.Paginator.clientPager({url : 'test'}));
 
       var options = {};
       clientPagerTest.sync(null, null, options);
@@ -177,7 +177,7 @@ describe('backbone.paginator.clientPager', function() {
       var clientPagerTest = {
         paginator_core: {}
       };
-      _.extend(clientPagerTest, new Backbone.Paginator.clientPager());
+      _.extend(clientPagerTest, new Backbone.Paginator.clientPager({url : 'test'}));
 
       var options = {};
       clientPagerTest.sync(null, null, options);
@@ -194,7 +194,7 @@ describe('backbone.paginator.clientPager', function() {
         paginator_core: {
         }
       };
-      _.extend(clientPagerTest, new Backbone.Paginator.clientPager());
+      _.extend(clientPagerTest, new Backbone.Paginator.clientPager({url : 'test'}));
 
       var options = {};
       clientPagerTest.sync(null, null, options);
@@ -211,7 +211,7 @@ describe('backbone.paginator.clientPager', function() {
 
         }
       };
-      _.extend(clientPagerTest, new Backbone.Paginator.clientPager());
+      _.extend(clientPagerTest, new Backbone.Paginator.clientPager({url : 'test'}));
 
       var options = {};
       clientPagerTest.sync(null, null, options);
@@ -229,7 +229,7 @@ describe('backbone.paginator.clientPager', function() {
           sortBy: 'lastName'
         }
       };
-      _.extend(clientPagerTest, new Backbone.Paginator.clientPager());
+      _.extend(clientPagerTest, new Backbone.Paginator.clientPager({url : 'test'}));
 
       var options = {};
       clientPagerTest.sync(null, null, options);
@@ -247,7 +247,7 @@ describe('backbone.paginator.clientPager', function() {
           }
         }
       };
-      _.extend(clientPagerTest, new Backbone.Paginator.clientPager());
+      _.extend(clientPagerTest, new Backbone.Paginator.clientPager({url : 'test'}));
 
       var options = {};
       clientPagerTest.sync(null, null, options);
@@ -267,7 +267,7 @@ describe('backbone.paginator.clientPager', function() {
           }
         }
       };
-      _.extend(clientPagerTest, new Backbone.Paginator.clientPager());
+      _.extend(clientPagerTest, new Backbone.Paginator.clientPager({url : 'test'}));
 
       var options = {};
       clientPagerTest.sync(null, null, options);
@@ -285,7 +285,7 @@ describe('backbone.paginator.clientPager', function() {
           dataType: 'json'
         }
       };
-      _.extend(clientPagerTest, new Backbone.Paginator.clientPager());
+      _.extend(clientPagerTest, new Backbone.Paginator.clientPager({url : 'test'}));
 
       var server = sinon.fakeServer.create();
       server.autoRespond = true;
